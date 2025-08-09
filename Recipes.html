@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/c010c9444f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header id="recipe__bar">
@@ -50,33 +51,40 @@
           <a class="path__link" href="">Cookies</a>
         </li>
         <li>
-          <a class="path__link" href="">Ice Cream</a>
+          <a class="path__link" href="">Pie</a>
         </li>
         <li>
           <a class="path__link" href="">Cake</a>
         </li>
         <li>
-          <a class="path__link" href="">Pie</a>
+          <a class="path__link" href="">Ice Cream</a>
         </li>
       </ul>
-      <div class="recipe__search">
-        <h2 class="search__title">Or...search for your selection:</h2>
-        <input class="selection__search" type="text" placeholder="Search" />
-      </div>
+      <form class="recipe__search">
+        <label class="search__title">Or...search for your selection:</label>
+        <div class="search">
+          <input id="search__input" type="text" placeholder="Search" />
+          <button class="submit__search" type="submit">Search</button>
+        </div>
+      </form>
+      <div id="status"></div>
+      <ul id="results"></ul>
     </section>
-    <section class="loading__section">
-
-    </section>
+    <section class="loading__section"></section>
     <footer>
       <figure class="logo__wrapper">
-        <img class="logo__bottom" src="./assets/logo-png-brightblue.png" alt="">
+        <img
+          class="logo__bottom"
+          src="./assets/logo-png-brightblue.png"
+          alt=""
+        />
       </figure>
       <div class="footer__links">
         <li class="link__list">
           <a class="footer__link" href="#">Top</a>
         </li>
         <li class="link__list">
-          <a class="footer__link"  href="">More Recipes</a>
+          <a class="footer__link" href="">More Recipes</a>
         </li>
       </div>
     </footer>

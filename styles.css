@@ -226,15 +226,30 @@ nav {
 
 .recipe__search {
     text-align: center;
+    margin-top: 12px;
 }
 
-.search__title {
-    padding-bottom: 12px;
+.path__title, .search__title {
+    font-size: 24px;
+    font-weight: 450;
 }
-.selection__search {
+#search__input {
     width: 100%;
     border-radius: 20px;
     padding: 8px;
+    margin: 8px 12px;
+}
+
+.submit__search {
+    border-radius: 20px;
+    background-color: #c2e3fb;
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+.search {
+    display: flex;
+    justify-content: space-between;
 }
 
 .loading__section {

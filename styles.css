@@ -224,32 +224,52 @@ nav {
     transform: scale(1.1);
 }
 
-.recipe__search {
-    text-align: center;
-    margin-top: 12px;
-}
-
 .path__title, .search__title {
     font-size: 24px;
     font-weight: 450;
 }
-#search__input {
+
+.search__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+}
+.search {
+    position: relative;
+    width: 500px;
+    margin: 12px;
+}
+
+#search-input {
+    height: 48px;
     width: 100%;
+    border: 1px solid #ccc;
     border-radius: 20px;
-    padding: 8px;
-    margin: 8px 12px;
+    font-size: 16px;
+    padding: 0 70px 0 24px;
 }
 
 .submit__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
     border-radius: 20px;
+    border: none;
     background-color: #c2e3fb;
     cursor: pointer;
-    padding: 0 8px;
+    font-size: 14px;
+    padding: 0 24px;
+    transition: all 0.3s ease;
+    font-size: 14px;
 }
 
-.search {
-    display: flex;
-    justify-content: space-between;
+.submit__search:hover {
+    background-color: #0094fe;
+    transform: scale(1.05);
 }
 
 .loading__section {

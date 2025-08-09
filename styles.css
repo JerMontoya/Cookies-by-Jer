@@ -198,7 +198,6 @@ nav {
 }
 
 .path__title {
-    margin-top: 18px;
 }
 
 .path__options {
@@ -227,12 +226,12 @@ nav {
 .path__title, .search__title {
     font-size: 24px;
     font-weight: 450;
+    margin-top: 24px;
 }
 
 .search__title {
     display: flex;
     justify-content: center;
-    margin-top: 18px;
 }
 .search {
     position: relative;
@@ -264,7 +263,9 @@ nav {
     font-size: 14px;
     padding: 0 24px;
     transition: all 0.3s ease;
-    font-size: 14px;
+    font-size: 16px;
+    margin: 4px;
+    width: 25%;
 }
 
 .submit__search:hover {

@@ -324,15 +324,55 @@ footer {
     font-weight: bold;
 }
 
+/* SEARCH RESULTS */
+
+.search-results {
+  list-style: none;         
+  padding: 12px;
+  margin: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem;
+}
+
+.search-results li {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.search-results li:hover {
+  transform: scale(1.02);
+  border-color: #0094fe;
+}
+
+.search-results h3 {
+  text-align: center;
+  margin: 0 0 0.5rem;
+  color: #242424;
+}
+
+.search-results p {
+  text-align: center;
+  margin: 0.25rem 0;
+  line-height: 1.4;
+}
 
 /* tablets */
 @media (max-width: 1000px) {
     .recipes {
         margin-top: -375px;
     }
+    .search-results {
+        grid-template-columns: repeat(2, 1fr); 
+    }
 }
 
-@media (max-width: 70px) {
+@media (max-width: 700px) {
     .recipes {
         margin-top: -250px;
     }
@@ -341,5 +381,8 @@ footer {
 @media (max-width: 480px) {
     .recipes {
         margin-top: -150px;
+    }
+    .search-results {
+        grid-template-columns: repeat(2, 1fr); 
     }
 }
